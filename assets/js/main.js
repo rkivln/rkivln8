@@ -9,39 +9,47 @@ document.addEventListener('DOMContentLoaded', () => {
   initContactForm();
 });
 
-// 1. Giant Hero Word Toggle (CREATE -> CODE -> BUILD)
+// 1. Automatic Giant Hero Word Rotation (CREATE -> CODE -> BUILD)
 function initHeroWordToggle() {
   const words = ['CREATE', 'CODE', 'BUILD'];
   let currentIndex = 0;
   const wordEl = document.getElementById('giantHeroWord');
-  const toggleBtn = document.getElementById('wordToggleBtn');
 
-  if (!wordEl || !toggleBtn) return;
+  if (!wordEl) return;
 
-  function setWord(index) {
+  function cycleWord() {
+    wordEl.style.transition = 'opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1), transform 0.35s cubic-bezier(0.4, 0, 0.2, 1)';
     wordEl.style.opacity = '0';
-    wordEl.style.transform = 'translateY(10px)';
+    wordEl.style.transform = 'translateY(-12px)';
+
     setTimeout(() => {
-      wordEl.textContent = words[index];
-      wordEl.style.opacity = '1';
-      wordEl.style.transform = 'translateY(0)';
-    }, 150);
+      currentIndex = (currentIndex + 1) % words.length;
+      wordEl.textContent = words[currentIndex];
+      wordEl.style.transform = 'translateY(12px)';
+
+      requestAnimationFrame(() => {
+        setTimeout(() => {
+          wordEl.style.opacity = '1';
+          wordEl.style.transform = 'translateY(0)';
+        }, 30);
+      });
+    }, 350);
   }
 
-  toggleBtn.addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % words.length;
-    setWord(currentIndex);
-  });
+  // Automatically cycle words every 2.5 seconds
+  let timer = setInterval(cycleWord, 2500);
 
+  // Optional: click on the word itself immediately cycles and resets timer
   wordEl.addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % words.length;
-    setWord(currentIndex);
+    clearInterval(timer);
+    cycleWord();
+    timer = setInterval(cycleWord, 2500);
   });
 }
 
 // 2. Navigation & Drawer
 function initNavigation() {
-  const hamburgerBtn = document.getElementById('hamburgerBtn');
+  const hamburgerBtns = document.querySelectorAll('.hamburger-btn');
   const drawer = document.getElementById('navDrawer');
   const backdrop = document.getElementById('drawerBackdrop');
   const drawerCloseBtn = document.getElementById('drawerCloseBtn');
@@ -50,26 +58,26 @@ function initNavigation() {
   function openDrawer() {
     drawer.classList.add('open');
     backdrop.classList.add('open');
-    hamburgerBtn.classList.add('active');
+    hamburgerBtns.forEach(btn => btn.classList.add('active'));
     document.body.style.overflow = 'hidden';
   }
 
   function closeDrawer() {
     drawer.classList.remove('open');
     backdrop.classList.remove('open');
-    hamburgerBtn.classList.remove('active');
+    hamburgerBtns.forEach(btn => btn.classList.remove('active'));
     document.body.style.overflow = '';
   }
 
-  if (hamburgerBtn) {
-    hamburgerBtn.addEventListener('click', () => {
+  hamburgerBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
       if (drawer.classList.contains('open')) {
         closeDrawer();
       } else {
         openDrawer();
       }
     });
-  }
+  });
 
   if (drawerCloseBtn) drawerCloseBtn.addEventListener('click', closeDrawer);
   if (backdrop) backdrop.addEventListener('click', closeDrawer);
