@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GOKULAN</title>
   <meta name="description" content="Portfolio of Gokulan A - Full Stack JavaScript (MERN) Developer, UI/UX Designer & AI Enthusiast. Building modern digital products at the intersection of web technologies, AI, and human-centered design.">
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/styles.css?v=2.0">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ff6a14'><path d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/></svg>">
 </head>
 <body>
@@ -26,28 +26,31 @@
         <div class="fluid-shape fluid-shape-2"></div>
         <div class="fluid-shape fluid-shape-3"></div>
 
-        <!-- Top Left Brand Logo -->
-        <a href="#home" class="brand-logo" aria-label="Gokulan A Home">
-          <div class="brand-icon">
-            <!-- Stylized Infinity Tech Logo Mark -->
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M18.178 8c5.096 0 5.096 8 0 8-5.095 0-7.133-8-12.356-8-5.096 0-5.096 8 0 8 5.223 0 7.261-8 12.356-8z"></path>
-            </svg>
-          </div>
-          <span class="brand-name">Gokulan</span>
-          <span class="brand-tag">MERN · AI</span>
-        </a>
+        <!-- Top Bar: Brand Logo + Mobile Hamburger -->
+        <div class="hero-top-bar">
+          <a href="#home" class="brand-logo" aria-label="Gokulan A Home">
+            <div class="brand-icon">
+              <!-- Stylized Infinity Tech Logo Mark -->
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18.178 8c5.096 0 5.096 8 0 8-5.095 0-7.133-8-12.356-8-5.096 0-5.096 8 0 8 5.223 0 7.261-8 12.356-8z"></path>
+              </svg>
+            </div>
+            <span class="brand-name">Gokulan</span>
+            <span class="brand-tag">MERN · AI</span>
+          </a>
+          <button class="hero-mobile-menu-btn hamburger-btn" id="mobileHamburgerBtn" aria-label="Toggle navigation menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+        </div>
 
         <!-- Middle Visual Stage: Giant Typography Behind Subject -->
         <div class="hero-stage">
           
-          <!-- Massive Condensed Display Word -->
+          <!-- Massive Condensed Display Word (Rotates Automatically) -->
           <div class="giant-word-container">
             <h1 class="giant-word" id="giantHeroWord">CREATE</h1>
-            <button class="word-toggle-hint" id="wordToggleBtn" title="Click to toggle hero mode">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
-              <span>Toggle: CREATE / CODE / BUILD</span>
-            </button>
           </div>
 
           <!-- Foreground Subject: Gokulan A Portrait with warm edge lighting -->
@@ -56,6 +59,7 @@
               src="assets/images/gokulan-cutout.png" 
               alt="Gokulan A — Full Stack Developer & UI/UX Designer" 
               class="hero-subject-img"
+              style="animation: none !important; -webkit-animation: none !important; transform: none !important;"
               loading="eager"
             >
           </div>
@@ -970,7 +974,7 @@
 
         <div style="margin-bottom: 20px;">
           <h4 style="color: #ffffff; font-size: 1rem; text-transform: uppercase; border-left: 3px solid var(--color-orange-bright); padding-left: 10px; margin-bottom: 8px;">Key Accomplishments</h4>
-          <p><strong>Team Lead — Smart India Hackathon Internal Selection:</strong> Selected among Top 45 of 129 teams for PRAMAANX (AI Fake Identity Screening System).</p>
+          <p><strong>Smart India Hackathon Internal Selection:</strong> Selected among Top 45 of 129 teams for PRAMAANX (AI Fake Identity Screening System).</p>
         </div>
 
         <div style="margin-bottom: 20px;">
@@ -994,6 +998,6 @@
 
   <!-- Project Data and Script Files -->
   <script src="assets/js/projects-data.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js?v=2.0"></script>
 </body>
 </html>
