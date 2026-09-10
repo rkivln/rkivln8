@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gokulan A — Full Stack JavaScript (MERN) Developer & UI/UX Designer</title>
+  <meta name="description" content="Portfolio of Gokulan A - Full Stack JavaScript (MERN) Developer, UI/UX Designer & AI Enthusiast. Building modern digital products at the intersection of web technologies, AI, and human-centered design.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ff6a14'><path d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/></svg>">
+</head>
+<body>
+
+  <!-- Main Canvas Wrapper (Framed design inspired by reference image) -->
+  <div class="canvas-wrapper">
+    
+    <!-- ==========================================================================
+         HERO SECTION: EXACT DESIGN REPLICA
+         ========================================================================== -->
+    <header class="hero-frame" id="home">
+      
+      <!-- LEFT COLUMN: Burnt Orange to Deep Amber Fluid Gradient -->
+      <div class="hero-left">
+        
+        <!-- Ambient Fluid Glow Backgrounds -->
+        <div class="fluid-shape fluid-shape-1"></div>
+        <div class="fluid-shape fluid-shape-2"></div>
+        <div class="fluid-shape fluid-shape-3"></div>
+
+        <!-- Top Left Brand Logo -->
+        <a href="#home" class="brand-logo" aria-label="Gokulan A Home">
+          <div class="brand-icon">
+            <!-- Stylized Infinity Tech Logo Mark -->
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18.178 8c5.096 0 5.096 8 0 8-5.095 0-7.133-8-12.356-8-5.096 0-5.096 8 0 8 5.223 0 7.261-8 12.356-8z"></path>
+            </svg>
+          </div>
+          <span class="brand-name">Gokulan</span>
+          <span class="brand-tag">MERN · AI</span>
+        </a>
+
+        <!-- Middle Visual Stage: Giant Typography Behind Subject -->
+        <div class="hero-stage">
+          
+          <!-- Massive Condensed Display Word -->
+          <div class="giant-word-container">
+            <h1 class="giant-word" id="giantHeroWord">CREATE</h1>
+            <button class="word-toggle-hint" id="wordToggleBtn" title="Click to toggle hero mode">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+              <span>Toggle: CREATE / CODE / BUILD</span>
+            </button>
+          </div>
+
+          <!-- Foreground Subject: Gokulan A Portrait with warm edge lighting -->
+          <div class="hero-subject-wrap">
+            <img 
+              src="assets/images/gokulan-portrait.png" 
+              alt="Gokulan A — Full Stack Developer & UI/UX Designer" 
+              class="hero-subject-img"
+              loading="eager"
+            >
+          </div>
+
+        </div>
+
+        <!-- Left Content: Subheadline & White CTA Pill Button -->
+        <div class="hero-left-content">
+          <p class="hero-subheadline">
+            Full-stack web applications that inspire. Seamless experiences built with <strong>React</strong>, <strong>Next.js</strong>, and <strong>Node.js</strong>.
+          </p>
+          <a href="#work" class="cta-pill-button scroll-link" id="viewWorkCta">
+            <span>VIEW WORK</span>
+            <span class="cta-pill-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </span>
+          </a>
+        </div>
+
+        <!-- Social Proof Section (Bottom Left) -->
+        <div class="social-proof-bar">
+          <div class="social-proof-avatars">
+            <div class="avatar-stack-item">
+              <img src="assets/images/avatars/avatar1.png" alt="Collaborator 1">
+            </div>
+            <div class="avatar-stack-item">
+              <img src="assets/images/avatars/avatar2.png" alt="Collaborator 2">
+            </div>
+            <div class="avatar-stack-item">
+              <img src="assets/images/avatars/avatar3.png" alt="Collaborator 3">
+            </div>
+            <div class="avatar-stack-item">
+              <img src="assets/images/avatars/avatar4.png" alt="Collaborator 4">
+            </div>
+            <div class="avatar-counter-badge">+12</div>
+          </div>
+          <p class="social-proof-text">Trusted by forward-thinking brands and tech startups</p>
+        </div>
+
+      </div>
+
+      <!-- RIGHT COLUMN: Overlapping White Rounded Panel -->
+      <aside class="hero-right">
+        
+        <!-- Top Navigation -->
+        <div class="panel-header">
+          <nav class="panel-nav" aria-label="Main Navigation">
+            <a href="#work" class="panel-nav-link scroll-link">WORK</a>
+            <a href="#about" class="panel-nav-link scroll-link">ABOUT</a>
+            <a href="#services" class="panel-nav-link scroll-link">SERVICES</a>
+            <a href="#contact" class="panel-nav-link scroll-link">CONTACT</a>
+          </nav>
+          
+          <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle navigation menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+        </div>
+
+        <!-- Availability Status Block (Middle Right) -->
+        <div class="availability-block">
+          <div class="availability-label">
+            AVAILABLE FOR <span class="status-dot"></span>
+          </div>
+          <h2 class="availability-title">Full-Stack Web Projects</h2>
+          <p class="availability-meta">
+            Architecting scalable web applications, identity screening AI pipelines, and human-centered digital experiences.
+          </p>
+          <a href="#contact" class="availability-cta-link scroll-link">
+            <span>Discuss your idea</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+          </a>
+        </div>
+
+        <!-- Testimonial Card (Bottom Right) -->
+        <div class="testimonial-card">
+          <span class="quote-icon">“</span>
+          <p class="quote-body">
+            Gokulan delivered an outstanding web application that completely exceeded our expectations.
+          </p>
+          <div class="quote-footer">
+            <div class="author-info">
+              <span class="author-name">JAMES CARTER</span>
+              <span class="author-role">FOUNDER, BRAND</span>
+            </div>
+            <div class="author-avatar">
+              <img src="assets/images/avatar-james.jpg" alt="James Carter">
+            </div>
+          </div>
+        </div>
+
+      </aside>
+
+    </header>
+
+    <!-- ==========================================================================
+         ABOUT ME SECTION
+         ========================================================================== -->
+    <section class="section-container" id="about">
+      <div class="section-header">
+        <div class="section-eyebrow">
+          <span class="status-dot"></span> About Me
+        </div>
+        <h2 class="section-title">I build <span>products</span>, not just projects.</h2>
+        <p class="section-subtitle">
+          Building digital products at the intersection of Full-Stack Development, AI, and Human-Centered Design.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-narrative">
+          <h3 class="about-quote">
+            Turning bold concepts into scalable, intuitive software that solves real problems.
+          </h3>
+          <p class="about-text">
+            I'm a Computer Science and Engineering and Business Systems (CSBS) student with a passion for full-stack JavaScript (MERN), artificial intelligence, and UI/UX design. Based in Puducherry, India, I approach software engineering from ideation and interface design to backend architecture, database modeling, and cloud deployment.
+          </p>
+          <p class="about-text">
+            Whether building automated biometric verification systems for national hackathons, unified student platforms, or offline assistive hardware wearables for the visually impaired, I focus on performance, security, and human experience.
+          </p>
+          
+          <div class="about-highlights">
+            <div class="stat-card">
+              <div class="stat-value">8.59</div>
+              <div class="stat-label">Academic CGPA</div>
+              <div class="stat-sub">SMVEC Engineering</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value">Top 45</div>
+              <div class="stat-label">Smart India Hackathon</div>
+              <div class="stat-sub">Out of 129 Teams</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value">8+</div>
+              <div class="stat-label">Featured Projects</div>
+              <div class="stat-sub">Full Stack & AI/IoT</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value">100%</div>
+              <div class="stat-label">Offline IoT Tech</div>
+              <div class="stat-sub">Assistive Hardware</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-card-secondary">
+          <div class="education-card">
+            <h3>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+              Education & Background
+            </h3>
+            <div class="edu-degree">B.Tech in Computer Science & Engineering and Business Systems</div>
+            <div class="edu-college">Sri Manakula Vinayagar Engineering College (SMVEC)</div>
+            <div style="font-size: 0.85rem; color: #64748b; margin-top: 6px;">Expected Graduation: 2029 • Puducherry, India</div>
+
+            <div class="edu-badges">
+              <span class="badge-chip">CGPA: 8.59</span>
+              <span class="badge-chip">Team Lead</span>
+              <span class="badge-chip">Full Stack MERN</span>
+              <span class="badge-chip">AI Enthusiast</span>
+            </div>
+          </div>
+
+          <div class="education-card">
+            <h3>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+              Resume & Credentials
+            </h3>
+            <p style="font-size: 0.88rem; color: #94a3b8; margin-bottom: 16px;">
+              View my complete technical curriculum vitae, hackathon accomplishments, and project references.
+            </p>
+            <button class="cta-pill-button open-resume-btn" style="padding: 12px 24px; font-size: 0.82rem; width: 100%;">
+              <span>VIEW RESUME</span>
+              <span class="cta-pill-icon">↗</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         TECHNICAL SKILLS SECTION
+         ========================================================================== -->
+    <section class="section-container" id="skills">
+      <div class="section-header">
+        <div class="section-eyebrow">
+          <span class="status-dot"></span> Capabilities
+        </div>
+        <h2 class="section-title">Technical <span>Stack</span> & Toolkit</h2>
+        <p class="section-subtitle">
+          Modern languages, frameworks, databases, and design platforms utilized across frontend, backend, and AI workflows.
+        </p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="skills-filter-nav">
+        <button class="filter-chip active" data-filter="all">All Skills</button>
+        <button class="filter-chip" data-filter="frontend">Frontend</button>
+        <button class="filter-chip" data-filter="backend">Backend</button>
+        <button class="filter-chip" data-filter="databases">Databases</button>
+        <button class="filter-chip" data-filter="languages">Languages</button>
+        <button class="filter-chip" data-filter="tools">Tools & Platforms</button>
+        <button class="filter-chip" data-filter="design">UI/UX Design</button>
+      </div>
+
+      <!-- Skills Cards Grid -->
+      <div class="skills-grid">
+        
+        <!-- Frontend -->
+        <div class="skill-category-card" data-category="frontend">
+          <div class="skill-category-title">
+            <span>FRONTEND ARCHITECTURE</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+          </div>
+          <div class="skills-tag-cloud">
+            <div class="skill-pill">React <span class="skill-pill-tag">Core</span></div>
+            <div class="skill-pill">Tailwind CSS <span class="skill-pill-tag">Styling</span></div>
+            <div class="skill-pill">HTML5 & CSS3 <span class="skill-pill-tag">Foundation</span></div>
+            <div class="skill-pill">JavaScript (ES6+) <span class="skill-pill-tag">Language</span></div>
+            <div class="skill-pill">Responsive Design <span class="skill-pill-tag">Standard</span></div>
+            <div class="skill-pill">REST API Integration <span class="skill-pill-tag">Data</span></div>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="skill-category-card" data-category="backend">
+          <div class="skill-category-title">
+            <span>BACKEND & APIS</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+          </div>
+          <div class="skills-tag-cloud">
+            <div class="skill-pill">Node.js <span class="skill-pill-tag">Runtime</span></div>
+            <div class="skill-pill">Express.js <span class="skill-pill-tag">Framework</span></div>
+            <div class="skill-pill">RESTful APIs <span class="skill-pill-tag">Architecture</span></div>
+            <div class="skill-pill">Server-side App Dev <span class="skill-pill-tag">Systems</span></div>
+          </div>
+        </div>
+
+        <!-- Databases -->
+        <div class="skill-category-card" data-category="databases">
+          <div class="skill-category-title">
+            <span>DATABASES & STORAGE</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+          </div>
+          <div class="skills-tag-cloud">
+            <div class="skill-pill">MongoDB <span class="skill-pill-tag">NoSQL</span></div>
+            <div class="skill-pill">SQL <span class="skill-pill-tag">Relational</span></div>
+            <div class="skill-pill">Supabase <span class="skill-pill-tag">BaaS / Auth</span></div>
+          </div>
+        </div>
+
+        <!-- Languages -->
+        <div class="skill-category-card" data-category="languages">
+          <div class="skill-category-title">
+            <span>CORE PROGRAMMING</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <div class="skills-tag-cloud">
+            <div class="skill-pill">JavaScript <span class="skill-pill-tag">Primary</span></div>
+            <div class="skill-pill">Python <span class="skill-pill-tag">AI / Scripts</span></div>
+            <div class="skill-pill">C <span class="skill-pill-tag">Low-Level</span></div>
+            <div class="skill-pill">SQL <span class="skill-pill-tag">Queries</span></div>
+          </div>
+        </div>
+
+        <!-- Tools & Platforms -->
+        <div class="skill-category-card" data-category="tools">
+          <div class="skill-category-title">
+            <span>TOOLS & DEPLOYMENT</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <div class="skills-tag-cloud">
+            <div class="skill-pill">Git & GitHub <span class="skill-pill-tag">VCS</span></div>
+            <div class="skill-pill">Vercel <span class="skill-pill-tag">Hosting</span></div>
+            <div class="skill-pill">VS Code <span class="skill-pill-tag">IDE</span></div>
+            <div class="skill-pill">Figma <span class="skill-pill-tag">Design</span></div>
+            <div class="skill-pill">Framer <span class="skill-pill-tag">Interactive</span></div>
+          </div>
+        </div>
+
+        <!-- Design & UI/UX -->
+        <div class="skill-category-card" data-category="design">
+          <div class="skill-category-title">
+            <span>UI / UX DESIGN</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+          </div>
+          <div class="skills-tag-cloud">
+            <div class="skill-pill">UI/UX Design <span class="skill-pill-tag">Creative</span></div>
+            <div class="skill-pill">Responsive Interface <span class="skill-pill-tag">Mobile/Web</span></div>
+            <div class="skill-pill">Rapid Prototyping <span class="skill-pill-tag">Figma</span></div>
+            <div class="skill-pill">Design Systems <span class="skill-pill-tag">Components</span></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         FEATURED PROJECTS SECTION (WORK)
+         ========================================================================== -->
+    <section class="section-container" id="work">
+      <div class="section-header">
+        <div class="section-eyebrow">
+          <span class="status-dot"></span> Portfolio Showcase
+        </div>
+        <h2 class="section-title">Selected <span>Work</span> & Projects</h2>
+        <p class="section-subtitle">
+          From full-stack web applications and AI fraud prevention systems to offline assistive hardware.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1: PRAMAANX (Featured Flagship) -->
+        <article class="project-card featured" id="project-pramaanx">
+          <div>
+            <div class="project-top">
+              <div class="project-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                Smart India Hackathon • Top 45 Selection
+              </div>
+              <div class="project-category">AI / Document Security / Identity Verification</div>
+            </div>
+
+            <h3 class="project-title">PRAMAANX</h3>
+            <p class="project-desc">
+              AI-based Fake Identity & Document Screening System designed to assist organizations in detecting suspicious identities and fraudulent documents through automated biometric screening and local-first edge architecture.
+            </p>
+
+            <!-- Interactive Biometric Screening Pipeline Diagram -->
+            <div class="pipeline-flow-wrapper">
+              <div class="pipeline-flow-header">
+                <span class="pipeline-flow-title">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                  Interactive AI Screening Pipeline (Click any step to inspect)
+                </span>
+                <span style="font-size: 0.75rem; color: #f97316; font-family: var(--font-mono);">Local-First Processing</span>
+              </div>
+
+              <div class="pipeline-flow-steps">
+                <div class="flow-step-item active" data-title="Passport / Document" data-desc="User or scanner inputs physical identity document (Passport, Voter ID, Aadhaar).">
+                  <div class="flow-step-number">01</div>
+                  <div class="flow-step-name">Passport / ID Document</div>
+                </div>
+
+                <div class="flow-step-item" data-title="Local OCR" data-desc="High-accuracy optical character recognition executes on-device without remote leaks.">
+                  <div class="flow-step-number">02</div>
+                  <div class="flow-step-name">Local OCR</div>
+                </div>
+
+                <div class="flow-step-item" data-title="Document Processing" data-desc="Syntactic consistency, micro-text, and security patterns analyzed for forgery.">
+                  <div class="flow-step-number">03</div>
+                  <div class="flow-step-name">Document Processing</div>
+                </div>
+
+                <div class="flow-step-item" data-title="Face Detection" data-desc="Biometric face coordinates cropped and normalized from the document portrait.">
+                  <div class="flow-step-number">04</div>
+                  <div class="flow-step-name">Face Detection</div>
+                </div>
+
+                <div class="flow-step-item" data-title="Face Verification" data-desc="1:1 feature vector distance calculation between live capture and ID portrait.">
+                  <div class="flow-step-number">05</div>
+                  <div class="flow-step-name">Face Verification</div>
+                </div>
+
+                <div class="flow-step-item" data-title="Liveness Detection" data-desc="Anti-spoofing algorithms detect print attacks, screens, and silicone masks.">
+                  <div class="flow-step-number">06</div>
+                  <div class="flow-step-name">Liveness Detection</div>
+                </div>
+
+                <div class="flow-step-item" data-title="Identity Screening" data-desc="Cross-validation against suspicious patterns & fraud heuristics database.">
+                  <div class="flow-step-number">07</div>
+                  <div class="flow-step-name">Identity Screening</div>
+                </div>
+
+                <div class="flow-step-item" data-title="Authorized Result" data-desc="Encrypted confirmation token transmitted to central server with zero raw biometric leaks.">
+                  <div class="flow-step-number">08</div>
+                  <div class="flow-step-name">Authorized Result</div>
+                </div>
+              </div>
+
+              <div class="flow-step-detail-box" id="pipelineDetailText">
+                <strong>Step: Passport / ID Document</strong> — Physical document uploaded for localized verification and biometric fraud check.
+              </div>
+            </div>
+
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">OpenCV</span>
+              <span class="project-tag">Local OCR</span>
+              <span class="project-tag">Face Verification</span>
+              <span class="project-tag">Liveness Detection</span>
+              <span class="project-tag">Privacy-Preserving</span>
+              <span class="project-tag">Smart India Hackathon</span>
+            </div>
+          </div>
+
+          <div class="project-footer-actions">
+            <button class="btn-detail btn-project-details" data-project="pramaanx">
+              <span>View System Architecture</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+            <span style="font-size: 0.8rem; color: #64748b;">Role: Team Lead & Pipeline Architect</span>
+          </div>
+        </article>
+
+        <!-- Project 2: ALTUSMATE -->
+        <article class="project-card" id="project-altusmate">
+          <div>
+            <div class="project-top">
+              <div class="project-badge">Live Web Application</div>
+              <div class="project-category">EdTech / Campus Platform</div>
+            </div>
+
+            <h3 class="project-title">AltusMATE</h3>
+            <p class="project-desc">
+              Student-focused digital platform designed to bring academic resources, schedules, and campus-related tools into one modern, accessible full-stack experience.
+            </p>
+
+            <div class="project-tags">
+              <span class="project-tag">React</span>
+              <span class="project-tag">Node.js</span>
+              <span class="project-tag">Express.js</span>
+              <span class="project-tag">MongoDB / Supabase</span>
+              <span class="project-tag">Tailwind CSS</span>
+              <span class="project-tag">REST APIs</span>
+            </div>
+          </div>
+
+          <div class="project-footer-actions">
+            <button class="btn-detail btn-project-details" data-project="altusmate">
+              <span>Case Study</span>
+            </button>
+            <a href="https://altusmate.vercel.app" target="_blank" rel="noopener" class="btn-external">
+              <span>Live Website</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 3: ATTENDIFIER -->
+        <article class="project-card" id="project-attendifier">
+          <div>
+            <div class="project-top">
+              <div class="project-badge">Education Technology</div>
+              <div class="project-category">Attendance Management</div>
+            </div>
+
+            <h3 class="project-title">Attendifier</h3>
+            <p class="project-desc">
+              Smart attendance platform simplifying tracking for students and teachers through a secure 7-digit dynamic security-code authorization system, timetable sync, and digital notice boards.
+            </p>
+
+            <div class="project-tags">
+              <span class="project-tag">React</span>
+              <span class="project-tag">Node.js</span>
+              <span class="project-tag">Express.js</span>
+              <span class="project-tag">Security Auth</span>
+              <span class="project-tag">Class Timetable</span>
+            </div>
+          </div>
+
+          <div class="project-footer-actions">
+            <button class="btn-detail btn-project-details" data-project="attendifier">
+              <span>Explore Features</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Project 4: SMART ASSISTIVE HAT -->
+        <article class="project-card" id="project-assistive-hat">
+          <div>
+            <div class="project-top">
+              <div class="project-badge">Team Tech Titans</div>
+              <div class="project-category">Hardware / Assistive IoT</div>
+            </div>
+
+            <h3 class="project-title">Smart Assistive Hat</h3>
+            <p class="project-desc">
+              Sensor-integrated wearable designed to assist visually impaired individuals by detecting head-level and ground obstacles with real-time audio guidance. 100% offline operation without requiring internet connectivity.
+            </p>
+
+            <div class="project-tags">
+              <span class="project-tag">ESP8266</span>
+              <span class="project-tag">Ultrasonic Sensors</span>
+              <span class="project-tag">ToF Ground Sensor</span>
+              <span class="project-tag">Voice Module</span>
+              <span class="project-tag">Embedded Systems</span>
+            </div>
+          </div>
+
+          <div class="project-footer-actions">
+            <button class="btn-detail btn-project-details" data-project="assistive-hat">
+              <span>Hardware Specs</span>
+            </button>
+            <span style="font-size: 0.78rem; color: #64748b;">Mentor: Dr. M. Auxilia</span>
+          </div>
+        </article>
+
+        <!-- Project 5: PROJECT A.U.R.A. -->
+        <article class="project-card" id="project-aura">
+          <div>
+            <div class="project-top">
+              <div class="project-badge">Industrial AI Concept</div>
+              <div class="project-category">Industry 4.0 / Edge Computing</div>
+            </div>
+
+            <h3 class="project-title">Project A.U.R.A.</h3>
+            <p class="project-desc">
+              Autonomous Universal Reality Architecture — a zero-integration cognitive overlay designed to digitize legacy CNC machines, PLCs, and disconnected industrial data sources without heavy rewiring.
+            </p>
+
+            <div class="project-tags">
+              <span class="project-tag">Edge AI</span>
+              <span class="project-tag">Industrial IoT</span>
+              <span class="project-tag">Legacy Machine Overlay</span>
+              <span class="project-tag">Telemetry Acquisition</span>
+            </div>
+          </div>
+
+          <div class="project-footer-actions">
+            <button class="btn-detail btn-project-details" data-project="project-aura">
+              <span>Overview</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Project 6: MEDIBRIDGE & EARTH HEALTH -->
+        <article class="project-card" id="project-other-ideas">
+          <div>
+            <div class="project-top">
+              <div class="project-badge">Research & Experiments</div>
+              <div class="project-category">Healthcare & 3D Data Viz</div>
+            </div>
+
+            <h3 class="project-title">MediBridge & Earth Health</h3>
+            <p class="project-desc">
+              <strong>MediBridge:</strong> AI-powered rural health triage assistant connecting patients via SMS/WhatsApp with multi-language AI translation.<br>
+              <strong>Earth Health App:</strong> 3D planetary digital twin combining real-time AQI, water, noise, heat index, and UV exposure via Three.js.
+            </p>
+
+            <div class="project-tags">
+              <span class="project-tag">Three.js</span>
+              <span class="project-tag">Twilio API</span>
+              <span class="project-tag">Translation APIs</span>
+              <span class="project-tag">Environmental APIs</span>
+            </div>
+          </div>
+
+          <div class="project-footer-actions">
+            <button class="btn-detail btn-project-details" data-project="medibridge">
+              <span>MediBridge</span>
+            </button>
+            <button class="btn-detail btn-project-details" data-project="earth-health">
+              <span>Earth Health</span>
+            </button>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Smart India Hackathon Achievement Spotlight Banner -->
+      <div class="sih-spotlight-card">
+        <div>
+          <div class="project-badge" style="margin-bottom: 14px;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+            National Hackathon Milestone
+          </div>
+          <h3 class="sih-title">Team Lead — Smart India Hackathon Internal Selection</h3>
+          <p class="sih-desc">
+            Led the design and technical development of our AI-based Identity & Document Screening System (PRAMAANX). Selected among the <strong>Top 45 teams out of 129 participating teams</strong> in the highly competitive inter-college selection.
+          </p>
+          <div class="sih-roles-list">
+            <span class="sih-role-item">System Architecture</span>
+            <span class="sih-role-item">AI/ML Pipeline</span>
+            <span class="sih-role-item">Cybersecurity Posture</span>
+            <span class="sih-role-item">Full-Stack Prototype</span>
+            <span class="sih-role-item">Presentation Strategy</span>
+          </div>
+        </div>
+        <div class="sih-metrics-box">
+          <div class="sih-metrics-number">45 / 129</div>
+          <div class="sih-metrics-caption">Selected Finalist Team</div>
+          <div class="sih-metrics-sub">Smart India Hackathon Internal Selection</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SERVICES & WHAT I DELIVER
+         ========================================================================== -->
+    <section class="section-container" id="services">
+      <div class="section-header">
+        <div class="section-eyebrow">
+          <span class="status-dot"></span> Offerings
+        </div>
+        <h2 class="section-title">What I <span>Deliver</span></h2>
+        <p class="section-subtitle">
+          Comprehensive development from user experience architecture to production deployment.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-category-card">
+          <div class="skill-category-title">
+            <span>FULL-STACK WEB APPS</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <p style="color: #94a3b8; font-size: 0.92rem; line-height: 1.6; margin-bottom: 16px;">
+            End-to-end web applications built on React, Next.js, and Node.js with secure authentication, database schemas, and responsive interfaces.
+          </p>
+          <div class="skills-tag-cloud">
+            <span class="skill-pill">MERN Architecture</span>
+            <span class="skill-pill">Supabase & MongoDB</span>
+            <span class="skill-pill">REST APIs</span>
+          </div>
+        </div>
+
+        <div class="skill-category-card">
+          <div class="skill-category-title">
+            <span>AI & EDGE SYSTEMS</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/></svg>
+          </div>
+          <p style="color: #94a3b8; font-size: 0.92rem; line-height: 1.6; margin-bottom: 16px;">
+            Local-first AI pipelines for document OCR, face verification, anti-spoofing liveness detection, and smart IoT device integration.
+          </p>
+          <div class="skills-tag-cloud">
+            <span class="skill-pill">Computer Vision</span>
+            <span class="skill-pill">Local-First OCR</span>
+            <span class="skill-pill">IoT Edge Telemetry</span>
+          </div>
+        </div>
+
+        <div class="skill-category-card">
+          <div class="skill-category-title">
+            <span>UI / UX & PROTOTYPING</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3z"/></svg>
+          </div>
+          <p style="color: #94a3b8; font-size: 0.92rem; line-height: 1.6; margin-bottom: 16px;">
+            Human-centered interfaces crafted in Figma with precise typography, organic fluid palettes, and high-conversion interactions.
+          </p>
+          <div class="skills-tag-cloud">
+            <span class="skill-pill">Design Systems</span>
+            <span class="skill-pill">Figma Prototyping</span>
+            <span class="skill-pill">Interaction Design</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         EXPERIENCE & LANGUAGES SECTION
+         ========================================================================== -->
+    <section class="section-container">
+      <div class="exp-grid">
+        
+        <!-- Experience / Leadership -->
+        <div class="timeline-card">
+          <div class="section-eyebrow">
+            <span class="status-dot"></span> Leadership
+          </div>
+          <h3 style="font-size: 1.5rem; font-weight: 800; color: #ffffff; margin-bottom: 24px;">
+            Experience & Responsibilities
+          </h3>
+
+          <div class="timeline-item">
+            <div class="timeline-role">Team Lead & Lead Architect</div>
+            <div class="timeline-org">Smart India Hackathon Internal Selection</div>
+            <p class="timeline-desc">
+              Directed technical planning, system architecture, AI/ML model research, and prototype implementation for PRAMAANX. Ranked among Top 45 of 129 participating teams.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-role">Hardware & Software Developer</div>
+            <div class="timeline-org">Team TECH TITANS — Smart Assistive Hat</div>
+            <p class="timeline-desc">
+              Engineered offline sensor integration using ESP8266, ultrasonic distance sensors, and ToF ground sensors to deliver real-time audio navigation for visually impaired users.
+            </p>
+          </div>
+        </div>
+
+        <!-- Languages & Global Communication -->
+        <div class="languages-card">
+          <div class="section-eyebrow">
+            <span class="status-dot"></span> Communication
+          </div>
+          <h3 style="font-size: 1.5rem; font-weight: 800; color: #ffffff; margin-bottom: 24px;">
+            Languages
+          </h3>
+
+          <div class="language-item">
+            <div>
+              <div class="lang-name">Tamil</div>
+              <div style="font-size: 0.75rem; color: #64748b;">Mother Tongue</div>
+            </div>
+            <span class="lang-level">Native Proficiency</span>
+          </div>
+
+          <div class="language-item">
+            <div>
+              <div class="lang-name">English</div>
+              <div style="font-size: 0.75rem; color: #64748b;">Technical & Business</div>
+            </div>
+            <span class="lang-level">Professional Working</span>
+          </div>
+
+          <div class="language-item">
+            <div>
+              <div class="lang-name">German</div>
+              <div style="font-size: 0.75rem; color: #64748b;">Duolingo Active Learner</div>
+            </div>
+            <span class="lang-level">Beginner (A1/A2)</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CONTACT SECTION
+         ========================================================================== -->
+    <section class="section-container" id="contact">
+      <div class="section-header">
+        <div class="section-eyebrow">
+          <span class="status-dot"></span> Get In Touch
+        </div>
+        <h2 class="section-title">Let's <span>Build</span> Something Outstanding</h2>
+        <p class="section-subtitle">
+          Have an ambitious project, an AI concept, or an opportunity to discuss? Send a direct message below.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        
+        <!-- Contact Info Card -->
+        <div class="contact-info-card">
+          <div>
+            <h3 style="font-size: 1.6rem; font-weight: 800; color: #ffffff; margin-bottom: 12px;">Gokulan A</h3>
+            <p style="color: #94a3b8; font-size: 0.95rem; line-height: 1.6;">
+              Full Stack JavaScript (MERN) Developer · UI/UX Designer · AI Enthusiast. Open for freelance contracts, team collaborations, and engineering roles.
+            </p>
+
+            <div class="contact-direct-item">
+              <div class="contact-icon-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div>
+                <div class="contact-label">Location</div>
+                <div class="contact-val">Puducherry, India (UTC +5:30)</div>
+              </div>
+            </div>
+
+            <div class="contact-direct-item">
+              <div class="contact-icon-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              </div>
+              <div>
+                <div class="contact-label">LinkedIn</div>
+                <div class="contact-val">
+                  <a href="https://www.linkedin.com/in/gokulan-a" target="_blank" rel="noopener" style="color: var(--color-orange-bright);">Gokulan A ↗</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-direct-item">
+              <div class="contact-icon-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              </div>
+              <div>
+                <div class="contact-label">Current Portfolio</div>
+                <div class="contact-val">
+                  <a href="https://gokulanportfolio.vercel.app" target="_blank" rel="noopener" style="color: var(--color-orange-bright);">gokulanportfolio.vercel.app ↗</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 36px;">
+            <button class="cta-pill-button open-resume-btn" style="padding: 14px 28px; width: 100%; justify-content: center;">
+              <span>VIEW CURRICULUM VITAE</span>
+              <span class="cta-pill-icon">↗</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Interactive Contact Form -->
+        <div class="contact-form-card">
+          <form id="contactForm">
+            <div class="form-group">
+              <label class="form-label" for="userName">Your Name</label>
+              <input type="text" id="userName" class="form-input" placeholder="e.g. James Carter" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="userEmail">Email Address</label>
+              <input type="email" id="userEmail" class="form-input" placeholder="e.g. james@brand.com" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="projectType">Project Type</label>
+              <select id="projectType" class="form-input" style="background: #12131a; color: #ffffff;">
+                <option value="full-stack">Full-Stack Web Application</option>
+                <option value="ai-screening">AI / Biometric System</option>
+                <option value="ui-ux">UI / UX Design & Prototyping</option>
+                <option value="collaboration">Hackathon / Engineering Role</option>
+                <option value="other">Other Inquiry</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="userMessage">Message / Project Overview</label>
+              <textarea id="userMessage" class="form-textarea" placeholder="Tell me about your project goals, timeline, and technical requirements..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">
+              <span>Send Message</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         FOOTER
+         ========================================================================== -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="#home" class="footer-link scroll-link">Home</a>
+        <a href="#work" class="footer-link scroll-link">Work</a>
+        <a href="#about" class="footer-link scroll-link">About</a>
+        <a href="#services" class="footer-link scroll-link">Services</a>
+        <a href="#contact" class="footer-link scroll-link">Contact</a>
+        <a href="https://www.linkedin.com/in/gokulan-a" target="_blank" rel="noopener" class="footer-link">LinkedIn</a>
+      </div>
+      <p>© 2026 GOKULAN A. Built with modern full-stack web architecture. All rights reserved.</p>
+    </footer>
+
+  </div>
+
+  <!-- ==========================================================================
+       MOBILE NAVIGATION DRAWER
+       ========================================================================== -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="nav-drawer" id="navDrawer" aria-label="Mobile Navigation Menu">
+    <div>
+      <div style="display: flex; align-items: center; justify-content: space-between;">
+        <div class="brand-logo">
+          <span class="brand-name">Gokulan</span>
+        </div>
+        <button class="modal-close-btn" id="drawerCloseBtn" aria-label="Close menu">✕</button>
+      </div>
+
+      <ul class="drawer-nav-list">
+        <li><a href="#home" class="drawer-nav-link">Home <span>↗</span></a></li>
+        <li><a href="#work" class="drawer-nav-link">Work <span>↗</span></a></li>
+        <li><a href="#about" class="drawer-nav-link">About <span>↗</span></a></li>
+        <li><a href="#skills" class="drawer-nav-link">Skills <span>↗</span></a></li>
+        <li><a href="#services" class="drawer-nav-link">Services <span>↗</span></a></li>
+        <li><a href="#contact" class="drawer-nav-link">Contact <span>↗</span></a></li>
+      </ul>
+    </div>
+
+    <div>
+      <div style="font-size: 0.75rem; color: #64748b; text-transform: uppercase; margin-bottom: 8px;">Direct Availability</div>
+      <div style="font-size: 0.9rem; color: #cbd5e1; font-weight: 600;">Full-Stack Web Projects</div>
+      <button class="cta-pill-button open-resume-btn" style="margin-top: 16px; width: 100%; justify-content: center; padding: 12px;">Resume ↗</button>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       PROJECT DETAIL INTERACTIVE MODAL
+       ========================================================================== -->
+  <div class="modal-backdrop" id="projectModal">
+    <div class="modal-content-box">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">✕</button>
+      <div style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--color-orange-accent); text-transform: uppercase; margin-bottom: 6px;" id="modalCategory">AI / Security</div>
+      <h3 style="font-size: 2rem; font-weight: 800; color: #ffffff; margin-bottom: 20px;" id="modalTitle">Project Title</h3>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       RESUME VIEWER MODAL
+       ========================================================================== -->
+  <div class="modal-backdrop" id="resumeModal">
+    <div class="modal-content-box" style="max-width: 840px;">
+      <button class="modal-close-btn" id="resumeCloseBtn" aria-label="Close modal">✕</button>
+      
+      <div style="display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--color-dark-border); padding-bottom: 16px; margin-bottom: 24px;">
+        <div>
+          <h3 style="font-size: 1.8rem; font-weight: 800; color: #ffffff;">GOKULAN A</h3>
+          <p style="color: var(--color-orange-bright); font-size: 0.9rem; font-weight: 600;">Full Stack JavaScript (MERN) Developer · UI/UX Designer · AI Enthusiast</p>
+        </div>
+        <button class="cta-pill-button" onclick="window.print()" style="padding: 10px 20px; font-size: 0.78rem;">
+          <span>Print / Save PDF</span>
+        </button>
+      </div>
+
+      <div style="color: #cbd5e1; font-size: 0.92rem; line-height: 1.7;">
+        <div style="margin-bottom: 20px;">
+          <h4 style="color: #ffffff; font-size: 1rem; text-transform: uppercase; border-left: 3px solid var(--color-orange-bright); padding-left: 10px; margin-bottom: 8px;">Education</h4>
+          <p><strong>B.Tech — Computer Science and Engineering and Business Systems</strong></p>
+          <p style="color: #94a3b8;">Sri Manakula Vinayagar Engineering College (SMVEC) • Expected 2029 • CGPA: 8.59</p>
+        </div>
+
+        <div style="margin-bottom: 20px;">
+          <h4 style="color: #ffffff; font-size: 1rem; text-transform: uppercase; border-left: 3px solid var(--color-orange-bright); padding-left: 10px; margin-bottom: 8px;">Key Accomplishments</h4>
+          <p><strong>Team Lead — Smart India Hackathon Internal Selection:</strong> Selected among Top 45 of 129 teams for PRAMAANX (AI Fake Identity Screening System).</p>
+        </div>
+
+        <div style="margin-bottom: 20px;">
+          <h4 style="color: #ffffff; font-size: 1rem; text-transform: uppercase; border-left: 3px solid var(--color-orange-bright); padding-left: 10px; margin-bottom: 8px;">Technical Proficiencies</h4>
+          <p><strong>Frontend:</strong> React, Tailwind CSS, HTML5, CSS3, JavaScript (ES6+), Responsive UI, REST APIs</p>
+          <p><strong>Backend & Data:</strong> Node.js, Express.js, MongoDB, SQL, Supabase</p>
+          <p><strong>Programming & AI:</strong> Python (OpenCV, OCR), C, JavaScript, Edge Computing</p>
+          <p><strong>Design & Tools:</strong> Figma, Git, GitHub, Vercel, VS Code</p>
+        </div>
+
+        <div>
+          <h4 style="color: #ffffff; font-size: 1rem; text-transform: uppercase; border-left: 3px solid var(--color-orange-bright); padding-left: 10px; margin-bottom: 8px;">Projects</h4>
+          <p>• <strong>PRAMAANX:</strong> AI-based local-first biometric document fraud detection.</p>
+          <p>• <strong>AltusMATE:</strong> Centralized campus and academic student web platform.</p>
+          <p>• <strong>Smart Assistive Hat:</strong> Offline obstacle guidance wearable using ESP8266 & ToF sensors.</p>
+          <p>• <strong>Attendifier:</strong> Attendance tracking with 7-digit dynamic security authentication.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project Data and Script Files -->
+  <script src="assets/js/projects-data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
